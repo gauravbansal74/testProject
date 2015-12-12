@@ -2,8 +2,14 @@
 
 angular
   .module('redmartApp', [
+    'ngAnimate',
+    'ngAria',
+    'ngCookies',
+    'ngMessages',
+    'ngResource',
     'ngRoute',
-    'ngMock'
+    'ngSanitize',
+    'ngTouch'
   ])
   .config(function ($routeProvider) {
     $routeProvider
