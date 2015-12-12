@@ -1,0 +1,97 @@
+.bs-header {
+  position: relative;
+  padding: 30px 15px;
+  font-size: 20px;
+  color: #cdbfe3;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  background-color: #6f5499;
+  background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);
+  background-image: linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+}
+
+
+
+
+
+
+.media .thumbnail {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.media-list {
+  text-align: center;
+}
+
+@media (min-width: 450px) {
+  .media-list {
+    text-align: left;
+  }
+
+  .media .thumbnail {
+    float: left;
+    margin-right: 25px;
+  }
+}
+
+
+.btn-outline {
+  color: #563d7c;
+  background-color: transparent;
+  border-color: #563d7c;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
+  color: #fff;
+  background-color: #563d7c;
+  border-color: #563d7c;
+}
+
+.media-heading{
+  float: right;
+    width: 63%;
+}
+
+.contactName{
+  font-size: 20px;
+}
+
+
+.contactMenu {
+    position: absolute;
+    clear: right;
+    top: 4px;
+    right:8px;
+}
+
+.contactMenu a{
+  display: block;
+  padding:5px;
+  cursor: pointer;
+}
+
+.contactDetail {
+    padding: 3px;
+    font-size: 14px;
+}
+
+.contactDelete:hover{
+  color:red;
+}
+
+.main-container-save{
+  width:100%;
+  text-align: left;
+}
+
+
+
+.custom_container{
+    width: 50%;
+    margin: 0 auto;
+}

@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row main-container-save" >
+        <div class="custom_container">
+        <div class="col-xs-12">
+             <h2 class="page-header text-center">Add or Update Contact</h2>
+            <form method="POST" name="userForm" ng-submit="submitForm()" novalidate>
+            <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+                <label>Full name:</label>
+                <input type="text" name="name" class="form-control" ng-model="userData.name" ng-minlength="3" required>
+                <p ng-show="userForm.name.$error.minlength" class="help-block">Full name is too short.</p>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+                <label>Email address:</label>
+                <input type="email" name="email" class="form-control" ng-model="userData.email" ng-minlength="10" required>
+                <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : userForm.tel.$invalid && !userForm.tel.$pristine }">
+                <label>Telephone number:</label>
+                <input type="text" name="tel" class="form-control" ng-model="userData.tel" ng-minlength="10" required>
+                <p ng-show="userForm.tel.$error.minlength" class="help-block">Telephone number is too short.</p>
+            </div>
+            <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
